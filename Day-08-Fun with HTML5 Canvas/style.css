@@ -1,0 +1,15 @@
+html, body {
+  margin:0;
+}
+.canvas-wrapper {
+  width: 90vw;
+  height: 90vh;
+  border: 5px outset #0c84f1;
+  margin: 20px auto;
+}
+
+.canvas-wrapper::before {
+  content: "Draw Canvas";
+  margin: 10px;
+  font-size: 18px;
+}
