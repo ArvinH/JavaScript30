@@ -17,6 +17,6 @@ body > p {
   left: 0;
   right: 0;
   top: 50%;
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   transform: translateY(-50%);
 }

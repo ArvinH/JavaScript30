@@ -9,7 +9,7 @@ body,html {
   font-family: sans-serif;
 }
 
-body > p {
+body > div {
   text-align: center;
   font-size: 5em;
   position: absolute;
