@@ -1,8 +1,9 @@
 ## Key points
 1. Video web api has `play`, `pause`, `timeupdate` and `progress` events can be listened.
 2. Use `(video.currentTime / video.duration) * 100` to calculate progress bar.
-3. For input slider, we still need to add handler to `change` and `mousemove` since change only be invoked on keyup and value updated.
-4. `flexBasis` is useful, parent has 100% `flexBasis`, then children can use `flexBasis` to control length.
+3. Change ` video.currentTime` to fastforwad or rewind.
+4. For input slider, we still need to add handler to `change` and `mousemove` since change only be invoked on keyup and value updated.
+5. `flexBasis` is useful, parent has 100% `flexBasis`, then children can use `flexBasis` to control length.
 
 ## Note
 1. Fullscreen web api has different vendor prefix. [Full Screen MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
