@@ -4,6 +4,7 @@
 3. Change ` video.currentTime` to fastforwad or rewind.
 4. For input slider, we still need to add handler to `change` and `mousemove` since change only be invoked on keyup and value updated.
 5. `flexBasis` is useful, parent has 100% `flexBasis`, then children can use `flexBasis` to control length.
+6. Use transition for height and position for hide contorl buttons and make some effects.
 
 ## Note
 1. Fullscreen web api has different vendor prefix. [Full Screen MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
