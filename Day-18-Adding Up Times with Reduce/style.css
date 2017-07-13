@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: [line1] 0.25fr [line2] 0.25fr [line3] 0.25fr [line4] 0.25fr [end];
+  grid-template-rows: [line1] 0.25fr [line2] 0.25fr [line3] 0.25fr [line4] 0.25fr [end];
+  width: 100%;
+  color: white;
+}
