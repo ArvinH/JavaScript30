@@ -9,7 +9,7 @@
 
     we can just pass funtion to it: `timeCode.split(':').map(parseFloat);`
 
-3. Propery use es6 will make your day `const [mins, secs] = timeCode.split(':').map(parseFloat);`
+3. Properly use es6 will make your day `const [mins, secs] = timeCode.split(':').map(parseFloat);`
 
 4. In this example, you can use one `reduce()` function to do all the magic, but remember pass first one params (which is 0 in this example) to it.
 
