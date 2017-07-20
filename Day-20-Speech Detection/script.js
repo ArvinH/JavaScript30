@@ -1,4 +1,17 @@
 (function() {
+  function fetchWeatherByYQL(location, callback) {
+    fetch(`https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22${location}%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys`)
+      .then((res) => res.json())
+      .then((data) => {
+        const location = data.query.results.channel.location;
+        const condition = data.query.results.channel.item.condition;
+        const temp = Math.floor((condition.temp - 32) * (5 / 9));
+        const result = `current weather in ${location.city}, ${location.region} is ${temp} degrees.`;
+        console.log(result);  
+        callback(result);
+      })
+  };
+
   window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
   const recognition = new SpeechRecognition();
@@ -14,12 +27,18 @@
       .map(result => result.transcript)
       .join('');
 
-      const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '💩');
-      p.textContent = poopScript;
+      p.textContent = transcript;
 
       if (e.results[0].isFinal) {
-        p = document.createElement('p');
-        words.appendChild(p);
+        if (transcript.includes('Weather of')) {
+          const regex = /Weather of /i;
+          const location = regex.exec(transcript);
+          fetchWeatherByYQL(location, (result) => {
+            p = document.createElement('p');
+            p.textContent = result;
+            words.appendChild(p);
+          });
+        }
       }
   });
 
