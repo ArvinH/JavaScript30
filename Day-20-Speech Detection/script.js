@@ -25,17 +25,19 @@
     const transcript = Array.from(e.results)
       .map(result => result[0])
       .map(result => result.transcript)
-      .join('');
+      .join('').toLocaleLowerCase();
 
       p.textContent = transcript;
 
       if (e.results[0].isFinal) {
-        if (transcript.includes('Weather of')) {
-          const regex = /Weather of /i;
-          const location = regex.exec(transcript);
+        if (transcript.includes('weather of') || transcript.includes('的天氣')) {
+          const regex = /Weather of ([a-zA-z]*)/i;
+          const regexChinese = /(.*)的天氣/i;
+          const location = regex.exec(transcript) || regexChinese.exec(transcript);
           fetchWeatherByYQL(location, (result) => {
             p = document.createElement('p');
             p.textContent = result;
+            p.style = 'color: red;';
             words.appendChild(p);
           });
         }
