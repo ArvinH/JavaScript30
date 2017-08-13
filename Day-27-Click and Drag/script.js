@@ -23,9 +23,9 @@
 
   slider.addEventListener('mousemove', (e) => {
     if (!isDown) return;  // stop the fn from running
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
+    e.preventDefault(); // stop any selecting text or other browser default behavior
+    const x = e.pageX - slider.offsetLeft; // re-calcute cursor position
     const walk = (x - startX) * 3;
-    slider.scrollLeft = scrollLeft - walk;
+    slider.scrollLeft = scrollLeft - walk; // use origin scrollLeft to minus your walk steps
   });
 })();
