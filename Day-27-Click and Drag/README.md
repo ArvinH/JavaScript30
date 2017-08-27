@@ -17,3 +17,6 @@
 ```
 * Remeber to use origin offsetLeft to minus walk steps `slider.scrollLeft = scrollLeft - walk;` for getting correct scrollLeft value;
 * You can add or multiply `walk` to speed up your scroll.
+
+
+![Screenshot](./screenshot.gif)

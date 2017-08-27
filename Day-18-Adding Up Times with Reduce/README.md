@@ -14,3 +14,5 @@
 4. In this example, you can use one `reduce()` function to do all the magic, but remember pass first one params (which is 0 in this example) to it.
 
 5. Sometime, short answer may not be good answer, use separated map function seems more clear.
+
+![Screenshot](./screenshot.png)

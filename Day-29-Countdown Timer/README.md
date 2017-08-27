@@ -9,3 +9,5 @@
 2. Can change page title by modified `document.title` 
 3. Elements with name will be under `document`, you can use `document.[name]` to select elements 
 4. use `e.preventDefault` in `submit` can prevent it append params on url
+
+![Screenshot](./screenshot.png)

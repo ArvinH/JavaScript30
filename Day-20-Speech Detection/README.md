@@ -18,3 +18,5 @@
 5. `e.results[0].isFinal`, we have this `isFinal` tag to check if recognition finished or not
 
 This is so cool!!
+
+![Screenshot](./screenshot.gif)

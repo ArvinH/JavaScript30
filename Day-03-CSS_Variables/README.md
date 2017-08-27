@@ -7,3 +7,5 @@
     (e.target.dataset also could be used, but e.target may different with this -> see Day 16)
 4. Use setProperty to change css variables
     * `document.documentElement.style.setProperty(`--${this.name}`, e.target.value + suffix);`
+
+![Screenshot](./screenshot.png)

@@ -54,3 +54,5 @@ Another point is the self-made debounce function, also note in comments:
     };
   }
 ```
+
+![Screenshot](./screenshot.gif)

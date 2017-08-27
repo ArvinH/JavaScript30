@@ -11,3 +11,5 @@
         - `const cap2 = Object.assign({}, person, { number: 99, age: 12 });` (only one-level copy)
         - `const cap3 = {...person};` (need babel for now and only one-level copy)
         - `const dev2 = JSON.parse(JSON.stringify(wes));` (kinda cheating but clone deep)
+
+![Screenshot](./screenshot.png)

@@ -7,3 +7,5 @@
 ## Notes
 
 I thought I can use `transition: transform .07s ease;` instead of adding condition in `removeTransition` function, but soon to realize other style like `border-color` won't be transitioned.
+
+![Screenshot](./screenshot.png)

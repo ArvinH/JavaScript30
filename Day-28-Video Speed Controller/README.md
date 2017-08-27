@@ -5,3 +5,5 @@
 const y = e.pageY - this.offsetTop;
 const percent = y / this.offsetHeight;
 ```
+
+![Screenshot](./screenshot.png)

@@ -69,3 +69,5 @@
     link.innerHTML = `<img src="${data}" alt="Handsome Man" />`;
     strip.insertBefore(link, strip.firsChild);
     ```
+
+![Screenshot](./screenshot.png)

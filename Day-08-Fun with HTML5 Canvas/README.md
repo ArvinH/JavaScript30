@@ -22,3 +22,5 @@
 
 * The first value in hsl is interesting, when value larger than 360, the color will repeat from zero while value keep growing. We reset it when larger than 360 though.
 * ES6 assign: [lastX, lastY] = [e.offsetX, e.offsetY];
+
+![Screenshot](./screenshot.png)

@@ -7,3 +7,5 @@
     use instance of `SpeechSynthesisUtterance` to set voice and text, let your device talk!
 
 * `querySelectorAll` can use `,` to separate different selectors!
+
+![Screenshot](./screenshot.png)
