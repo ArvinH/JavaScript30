@@ -11,3 +11,5 @@
     // so that we can get the actual mouse pointer position
     x = x + e.target.offsetLeft;
     ```
+
+![Screenshot](./screenshot.png)

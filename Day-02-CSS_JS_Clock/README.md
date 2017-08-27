@@ -8,3 +8,5 @@
 ## Notes
 
 If you want to use different `width` to diff hour, minutes and seconds hands, need to ajust the left or right position, due to element position in `absolute`(position decided by outer `relative` block).
+
+![Screenshot](./screenshot.png)

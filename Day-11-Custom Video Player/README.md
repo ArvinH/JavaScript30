@@ -20,3 +20,5 @@
   *. Take `video.webkitRequestFullscreen` to be an example, if we assign `video.webkitRequestFullscreen` to a variable called `requestFullscreen`
   We have to bind `video` to `requestFullscreen`, otherwise we'll get "Uncaught TypeError: Illegal invocation"
 We have to bind `video` to `requestFullscreen`, otherwise we'll get "Uncaught TypeError: Illegal invocation"
+
+![Screenshot](./screenshot.png)

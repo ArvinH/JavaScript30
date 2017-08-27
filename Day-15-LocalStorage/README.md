@@ -27,3 +27,5 @@ Different way of registering JS event: http://blog.xuite.net/vexed/tech/25248659
 
 JS event delegation:
 http://ithelp.ithome.com.tw/articles/10120565
+
+![Screenshot](./screenshot.png)

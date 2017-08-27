@@ -13,3 +13,5 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Glo
 
 If end is omitted, slice extracts through the end of the sequence (arr.length).
 If end is greater than the length of the sequence, slice extracts through the end of the sequence (arr.length).
+
+![Screenshot](./screenshot.png)
